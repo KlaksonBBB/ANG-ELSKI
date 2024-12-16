@@ -30,6 +30,15 @@ body {
     top: -80px;
 }
 
+@media screen and (max-width:367px) {
+    .audio {
+        position: relative;
+        left: 80px;
+        top: 0px;
+    }
+    
+}
+
 @keyframes animacja {
     from {
         scale: 1; color: black;
@@ -43,7 +52,10 @@ body {
     padding: 0;
 }
 
-
+.audio {
+    position: relative;
+    top: -80px;
+}
 
 
 .prev {
