@@ -34,12 +34,14 @@ body {
     top: -80px;
 }
 
-@media screen and (min-width:366px) {
+@media screen and (max-width:367px) {
     .audio {
         position: relative;
-        left: 50%;
+        left: 80px;
+        top: 0px;
     }
-  
+    
+}
 
 @keyframes animacja {
     from {
