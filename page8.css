@@ -80,22 +80,22 @@ body {
     
 }
 
-button {
+        .button {
     width: 200px;
     height: 50px;
     padding: 10px 20px;
     font-size: 16px;
-    border: 2px solid #ffc107;
+    border: 2px solid #87CEEB;
     border-radius: 8px;
-    background-color: #fff8e1;
-    color: #333;
+    background-color: #F0FFFF;
+    color: #001F54;
     cursor: pointer;
     position: relative;
     left: 43%;
 }
-button:hover {
-    background-color: #ffd54f;
-    border-color: #ffb300;
+.button:hover {
+    background-color: #87CEEB;
+    border-color: #87CEEB;
 }
 @media screen  and (max-width:1366px){
     button {
