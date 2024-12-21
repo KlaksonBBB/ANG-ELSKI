@@ -47,7 +47,7 @@
         // Aktualizacja czasu i kontrola przycisku
         audio.addEventListener('timeupdate', () => {
             controlButton.textContent = `${formatTime(audio.currentTime)} | ${audio.paused ? "Start" : "Pause"}`;
-            if (audio.currentTime >= 61.5) {
+            if (audio.currentTime >= 65) {
                 audio.pause();
                 audio.currentTime = 38; // Powrót do 10 sekundy
                 controlButton.textContent = `${formatTime(audio.currentTime)} | Start`;
@@ -57,7 +57,7 @@
         // Obsługa kliknięcia przycisku
         controlButton.addEventListener('click', () => {
             if (audio.paused) {
-                if (audio.currentTime < 38 || audio.currentTime >= 61.5) {
+                if (audio.currentTime < 38 || audio.currentTime >= 65) {
                     audio.currentTime = 38; // Zawsze zaczyna od 10 sekundy
                 }
                 audio.play();
