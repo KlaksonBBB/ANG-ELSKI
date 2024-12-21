@@ -94,7 +94,7 @@ button {
     left: 43%;
 }
 button:hover {
-    background-color: #ffd54f;
+    background-color: #87CEEB;
     border-color: #ffb300;
 }
 @media screen  and (max-width:1366px){
