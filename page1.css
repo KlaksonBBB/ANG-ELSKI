@@ -21,10 +21,47 @@ body {
     animation-direction: alternate;
 }
 
+@media screen  and (max-width:1366px) {
+    .chapter {
+        font-size: 40px;
+        position: relative;
+        left: -2%;
+    }
+    
+}
+
+@media screen  and (max-width:1100px) {
+    .chapter {
+        font-size: 40px;
+        position: relative;
+        left: 8%;
+    }
+    
+}
+
 @media screen  and (max-width:1000px) {
     .chapter {
-        font-size: 25px;
-        left: 50%;
+        font-size: 40px;
+        position: relative;
+        left: 4%;
+    }
+    
+}
+
+@media screen  and (max-width:500px) {
+    .chapter {
+        font-size: 30px;
+        position: relative;
+        left: 3%;
+    }
+    
+}
+
+@media screen  and (max-width:500px) {
+    .chapter {
+        font-size: 20px;
+        position: relative;
+        left: 4%;
     }
     
 }
@@ -43,6 +80,71 @@ body {
     
 }
 
+button {
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    background-color: #fff8e1;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    left: 43%;
+}
+button:hover {
+    background-color: #ffd54f;
+    border-color: #ffb300;
+}
+@media screen  and (max-width:1366px){
+    button {
+        position: relative;
+        left:40%;
+    }
+    
+}
+@media screen  and (max-width:1100px){
+    button {
+        position: relative;
+        left:50%;
+    }
+    
+}
+@media screen  and (max-width:1000px){
+    button {
+        position: relative;
+        left:42%;
+    }
+    
+}
+
+@media screen  and (max-width:500px){
+    button {
+        position: relative;
+        left:35%;
+    }
+    
+}
+
+@media screen  and (max-width:500px){
+    button {
+        position: relative;
+        left:28%;
+    }
+    
+}
+
+@media screen  and (max-width:350px){
+    button {
+        position: relative;
+        left:24%;
+    }
+    
+}
+
+
+
 @keyframes animacja {
     from {
         scale: 1; color: black;
@@ -59,10 +161,7 @@ body {
 
 
 
-.prev {
-    left: -65px;
 
-}
 .next {
 
     position: relative;
@@ -78,7 +177,7 @@ body {
     text-decoration: none;
 }
 
-@media screen  and (min-width:1366px) {
+@media screen  and (max-width:1366px) {
     .next {
         position: relative;
         left: 80%;
@@ -90,6 +189,14 @@ body {
     .next {
         position: relative;
         left: 80%;
+    }
+    
+}
+
+@media screen  and (max-width:1000px) {
+    .next {
+        position: relative;
+        left: 75%;
     }
     
 }
@@ -109,6 +216,61 @@ body {
     height: 600px;
     padding: 2px 2px;
     margin: 5px 5px;
+}
+
+@media screen and (max-width:1500px) {
+    .zdjęcia {
+        position: relative;
+        left: 4.5%;
+    }
+    
+}
+
+@media screen and (max-width:1400px) {
+    .zdjęcia {
+        position: relative;
+        left: 2%;
+    }
+    
+}
+
+@media screen and (max-width:1260px) {
+    .zdjęcia {
+        position: relative;
+        left: 1%;
+    }
+    
+}
+
+@media screen and (max-width:1000px) {
+    .zdjęcia {
+        position: relative;
+        left: 25%;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .zdjęcia {
+        position: relative;
+        left: 22%;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .zdjęcia {
+        position: relative;
+        left: 12%;
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+    .zdjęcia {
+        position: relative;
+        left: 5%;
+    }
+    
 }
 
 @media screen  and (max-width:1000px) {
