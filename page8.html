@@ -14,24 +14,57 @@
     <div class="chapter">
         <p>Chapter 3: Christmas Fulfillment</p>
     </div>
-    <audio id="myAudio" controls>
-        <source src="narracja - Made with Clipchamp.mp3" type="audio/mpeg">
-        Twój przeglądarka nie obsługuje elementu audio.
-    </audio>
+    <audio id="audio" src="narracja - Made with Clipchamp.mp3"></audio>
+    <button id="controlButton">3:50 | Start</button>
 
     <div class="zdjęcia">
-        <img src="panel 28.png" alt="">
+        <img src="./Zdjęcia/Panel 28.png" alt="">
     </div>
     <a href="page7.html" class="prev">&#10094</a>
     <script>
-        // Pobranie elementu audio
-        var audio = document.getElementById("myAudio");
+        const audio = document.getElementById('audio');
+        const controlButton = document.getElementById('controlButton');
 
-        // Ustawienie, aby audio rozpoczęło się od 30. sekundy
-        audio.currentTime = 230;
+        // Funkcja formatująca czas w formacie MM:SS
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+            return `${minutes}:${secs}`;
+        }
 
-        // Rozpoczęcie odtwarzania audio
-        audio.play();
+        // Ustawienie początkowego czasu na 10 sekund
+        audio.addEventListener('loadedmetadata', () => {
+            audio.currentTime = 230;
+        });
+
+        // Aktualizacja czasu i kontrola przycisku
+        audio.addEventListener('timeupdate', () => {
+            controlButton.textContent = `${formatTime(audio.currentTime)} | ${audio.paused ? "Start" : "Pause"}`;
+            if (audio.currentTime >= 239) {
+                audio.pause();
+                audio.currentTime = 230; // Powrót do 10 sekundy
+                controlButton.textContent = `${formatTime(audio.currentTime)} | Start`;
+            }
+        });
+
+        // Obsługa kliknięcia przycisku
+        controlButton.addEventListener('click', () => {
+            if (audio.paused) {
+                if (audio.currentTime < 230 || audio.currentTime >= 239) {
+                    audio.currentTime = 230; // Zawsze zaczyna od 10 sekundy
+                }
+                audio.play();
+            } else {
+                audio.pause();
+            }
+            controlButton.textContent = `${formatTime(audio.currentTime)} | ${audio.paused ? "Start" : "Pause"}`;
+        });
+
+        // Reset przycisku po zakończeniu odtwarzania
+        audio.addEventListener('ended', () => {
+            audio.currentTime = 230;
+            controlButton.textContent = `3:50 | Start`;
+        });
     </script>
 </body>
 
