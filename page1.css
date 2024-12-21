@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -80,7 +81,7 @@ body {
     
 }
 
-.button {
+        button {
     width: 200px;
     height: 50px;
     padding: 10px 20px;
@@ -93,26 +94,26 @@ body {
     position: relative;
     left: 43%;
 }
-.button:hover {
+button:hover {
     background-color: #87CEEB;
     border-color: #87CEEB;
 }
 @media screen  and (max-width:1366px){
-    .button {
+    button {
         position: relative;
         left:40%;
     }
     
 }
 @media screen  and (max-width:1100px){
-    .button {
+    button {
         position: relative;
         left:50%;
     }
     
 }
 @media screen  and (max-width:1000px){
-    .button {
+    button {
         position: relative;
         left:42%;
     }
@@ -120,7 +121,7 @@ body {
 }
 
 @media screen  and (max-width:500px){
-    .button {
+    button {
         position: relative;
         left:35%;
     }
@@ -128,7 +129,7 @@ body {
 }
 
 @media screen  and (max-width:500px){
-    .button {
+    button {
         position: relative;
         left:28%;
     }
@@ -136,7 +137,7 @@ body {
 }
 
 @media screen  and (max-width:350px){
-    .button {
+    button {
         position: relative;
         left:24%;
     }
@@ -157,6 +158,95 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
+.prev {
+    left: -65px;
+
+}
+.next {
+
+    position: relative;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.421);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen  and (max-width:1366px) {
+    .next {
+        position: relative;
+        left: 80%;
+    }
+    
+}
+
+@media screen  and (max-width:400px) {
+    .next {
+        position: relative;
+        left: 80%;
+    }
+    
+}
+
+@media screen  and (max-width:1000px) {
+    .next {
+        position: relative;
+        left: 75%;
+    }
+    
+}
+
+.prev {
+    position: relative;
+    left: 32.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.421);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+@media screen  and (max-width:1366px) {
+    .prev {
+        position: relative;
+        left: 43%;
+    }
+    
+}
+
+@media screen  and (max-width:400px) {
+    .prev {
+        position: relative;
+        left: 43%;
+    }
+    
+}
+
+@media screen  and (max-width:1366px) {
+    .prev {
+        position: relative;
+        left: 38%;
+    }
+    
+}
+
+
+
+
+
+
 
 
 
@@ -301,6 +391,17 @@ body {
     
 }
 
+.zd1 {
+    position: relative;
+}
+@media screen  and (min-width:1000px){
+    .zd1 {
+        position: relative;
+        left: 50%;
+    }
+    
+}
+
 
 
 
@@ -309,5 +410,18 @@ body {
     left: 40%;
     top: 10%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
